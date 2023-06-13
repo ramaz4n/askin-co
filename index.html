@@ -6,12 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css" />
 
+
+		<link rel="stylesheet" href="style.css" />
 		<title>ASKIN&CO</title>
 	</head>
 	<body>
@@ -87,6 +89,7 @@
 
 		<main>
 			<div class="container">
+
 				<div class="menu">
 					<div class="menu__wrap">
 						<div class="menu__catalog">
@@ -117,8 +120,159 @@
 					</div>
 					<button class="menu__btn">Оставить заявку</button>
 				</div>
+
+
+				<!--OFFER-->
+
+				<div class="offer">
+					<div class="offer__block first__block">
+						<div class="first__block-info">
+							<p class="first-block-title">Предлагаем лучшее</p>
+							<p class="first-block-text">
+								Компания предлагает продукцию высшего качества. 
+								Ведущие офтальмологи и руководители крупных лечебных заведений за эти годы убедились 
+								в надежном бизнес-партнерстве с «АСКИН и Ко».
+							</p>
+						</div>
+						<div class="first__block-company">
+							<div class="left__block">
+								<img src="images/heid.png" alt="img">
+								<img class="img2" src="images/reis.png" alt="img">
+								<img class="img3" src="images/tome.png" alt="img">
+								<img src="images/oer.png" alt="img">
+							</div>
+							<div class="right__block">
+								<img src="images/snip.png" alt="img">
+								<img class="img4" src="images/volk.png" alt="img">
+								<img src="images/lumenis.png" alt="img">
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="offer__block"></div>
+					<div class="offer__block"></div>
+					
+				</div>
+
+
+				<!--CATALOG-->
+				<div class="catalog">
+					<h3 class="catalog__title">Каталог оборудования:</h3>
+					<div class="catalog__list">
+						<a href="" class="catalog__item">
+							<img src="images/lazer.png" alt="img">
+							<p class="catalog__item-name">Лазерное обрудование</p>
+						</a>
+						<a href="" class="catalog__item">
+							<img src="images/micro.png" alt="img">
+							<p class="catalog__item-name">Микрохирургическое оборудование</p>
+						</a>
+						<a href class="catalog__item">
+							<img src="images/oftal.png" alt="img">
+							<p class="catalog__item-name">Офтальмоскопические линзы</p>
+						</a>
+						<a href="" class="catalog__item">
+							<img src="images/diag.png" alt="img">
+							<p class="catalog__item-name">Диагностика</p>
+						</a>
+					</div>
+				</div>
+
+
+				<!--NEWS-->
+				<div class="news">
+					<div class="news__top">
+						<h3 class="news__title">Последние новости:</h3>
+						<button class="news__btn"> Перейти в раздел новости</button>
+					</div>
+					<div class="news__list">
+						<div class="news__item">
+							<img src="images/xplat.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
+
+						<div class="news__item">
+							<img src="images/shift.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
+
+						<div class="news__item">
+							<img src="images/pero.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
+					</div>
+				</div>
+
+
 			</div>
+			
+			
+			<!--HELP-->
+			<div class="helpWrap">
+				<div class="container">
+					<div class="help">
+						<form class="help__left">
+							<p class="help__title">Нужна помощь?</p>
+							<input class="help__name" type="text" placeholder="Ваше имя">
+							<input class="help__tel" type="text" placeholder="Ваш телефон">
+							<textarea class="help__com" placeholder="Ваш комментарий"></textarea>
+							<label class="help__agree">
+								<input
+									type="checkbox"
+									id="offer"
+								 >
+								 <div class="fake-btn"></div>
+								<label for="offer" >Принимаю соглашения оферты</label>
+							</label>
+							<button class="help__btn">Отправить</button>
+						</form>
+						<div class="help__right">
+							<img src="images/help-tel.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--PARTNERS-->
+			<div class="container">
+				<div class="partners">
+					<h4 class="partners__title">Наши партнеры:</h4>
+					<div class="partners__list">
+						<div class="partners__list-item">
+							<img src="images/p-hair.png" alt="img">
+						</div>
+						<div class="partners__list-item">
+							<img src="images/p-oer.png" alt="img">
+						</div>
+						<div class="partners__list-item">
+							<img src="images/p-ries.png" alt="img">
+						</div>
+						<div class="partners__list-item">
+							<img src="images/p-tom.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</main>
+
+
+
+
 
 		<footer class="footer">
 			<div class="container">
@@ -150,6 +304,14 @@
 			</div>
 		</footer>
 
+
+
+		<script
+  			src="https://code.jquery.com/jquery-3.7.0.min.js"
+  			integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  			crossorigin="anonymous">
+		</script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="scripts/index.js"></script>
 	</body>
 </html>
