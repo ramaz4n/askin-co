@@ -95,7 +95,7 @@
 								src="images/catalog-icon.svg"
 								alt="ico"
 							/>
-							<span class="menu__catalog-name">Каталог</span>
+							<a href="catalog.html" class="menu__catalog-name">Каталог</a>
 							<img
 								class="menu__catalog-closeBtn"
 								src="images/catalog-close.svg"
@@ -117,7 +117,73 @@
 					</div>
 					<button class="menu__btn">Оставить заявку</button>
 				</div>
+
+				<!--application form-->
+				<div id="appFormWrap" class="close">
+					<div class="appForm">
+						<h4 class="appForm-title">Заполните форму заявки</h4>
+						<div class="appForm-inWrap">
+							<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
+							<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
+							<input class="appForm-alInput" type="text" placeholder="E-mail">
+							<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
+							<textarea class="appForm-message" placeholder="Сообщение"></textarea>
+						</div>
+						<label class="appForm__agree">
+							<input
+								type="checkbox"
+								id="app"
+							 >
+							 <div class="fake-app-btn"></div>
+							<label class="appForm-agreeText" for="app" >Принимаю соглашением условий обработки персональных данных</label>
+						</label>
+						<button class="appForm-btn">Отправить</button>
+					</div>
+				</div>
+
+
+				<!--about-->
+				<div class="contact__about">
+					<div class="contact__about-title">
+						О компании
+					</div>
+					<div class="contact__about-text">
+						Lorem ipsum dolor sit amet consectetur. Mattis tristique faucibus condimentum egestas elementum libero vitae risus nunc. 
+						Tristique diam adipiscing mauris dolor integer integer pretium nibh nunc. 
+					</div>
+				</div>
+	
+				<div class="contacts__wrap">
+					<div class="contacts__info">
+						<div class="contact__phones">
+							<p class="contact__title">Телефоны:</p>
+							<div>
+								<a href="tel:74959555562">+7 (495) 955-55-62</a>
+								<a href="tel:79161888289">+7 (916) 188-82-89</a>
+								<a href="tel:79850078899">+7 (985) 007-88-99</a>
+							</div>
+						</div>
+			
+						<div class="contact__email">
+							<p class="contact__title">Почта:</p>
+							<span>E-mail: <a href="mailto: info@askin.ru">info@askin.ru</a> </span> 
+						</div>
+			
+						<div class="contact__adress">
+							<p class="contact__title">Адрес:</p>
+							<span>119334, Москва, 5-й Донской пр-д., д.15, комната 30</span> 
+						</div>
+					</div>
+					<img src="images/contacts.png" class="contacts__img"></img>
+				</div>
+
 			</div>
+
+
+
+
+
+
 		</main>
 
 		<footer class="footer">

@@ -95,7 +95,7 @@
 								src="images/catalog-icon.svg"
 								alt="ico"
 							/>
-							<span class="menu__catalog-name">Каталог</span>
+							<a href="catalog.html" class="menu__catalog-name">Каталог</a>
 							<img
 								class="menu__catalog-closeBtn"
 								src="images/catalog-close.svg"
@@ -119,13 +119,61 @@
 				</div>
 
 
-
-				<div class="news">
-					<div class="news__top">
-						<h3 class="news__title">Последние новости:</h3>
-						<button class="news__btn"> Перейти в раздел новости</button>
+				<!--application form-->
+				<div id="appFormWrap" class="close">
+					<div class="appForm">
+						<h4 class="appForm-title">Заполните форму заявки</h4>
+						<div class="appForm-inWrap">
+							<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
+							<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
+							<input class="appForm-alInput" type="text" placeholder="E-mail">
+							<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
+							<textarea class="appForm-message" placeholder="Сообщение"></textarea>
+						</div>
+						<label class="appForm__agree">
+							<input
+								type="checkbox"
+								id="app"
+							 >
+							 <div class="fake-app-btn"></div>
+							<label class="appForm-agreeText" for="app" >Принимаю соглашением условий обработки персональных данных</label>
+						</label>
+						<button class="appForm-btn">Отправить</button>
 					</div>
-					<div class="news__list">
+				</div>
+
+
+
+
+
+				<div class="newsPage">
+					<div class="newsPage__list">
+						<div class="news__item">
+							<img src="images/xplat.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
+
+						<div class="news__item">
+							<img src="images/shift.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
+
+						<div class="news__item">
+							<img src="images/pero.png" alt="img">
+							<p class="news__item-name">Хтрургическая платформа OS4</p>
+							<span class="news__item-text">
+								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+							</span>
+							<a href="" class="news__item-btn">Читать далее ></a>
+						</div>
 						<div class="news__item">
 							<img src="images/xplat.png" alt="img">
 							<p class="news__item-name">Хтрургическая платформа OS4</p>

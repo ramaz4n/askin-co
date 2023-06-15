@@ -95,7 +95,7 @@
 								src="images/catalog-icon.svg"
 								alt="ico"
 							/>
-							<span class="menu__catalog-name">Каталог</span>
+							<a href="catalog.html" class="menu__catalog-name">Каталог</a>
 							<img
 								class="menu__catalog-closeBtn"
 								src="images/catalog-close.svg"
@@ -117,6 +117,67 @@
 					</div>
 					<button class="menu__btn">Оставить заявку</button>
 				</div>
+
+				<!--application form-->
+				<div id="appFormWrap" class="close">
+					<div class="appForm">
+						<h4 class="appForm-title">Заполните форму заявки</h4>
+						<div class="appForm-inWrap">
+							<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
+							<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
+							<input class="appForm-alInput" type="text" placeholder="E-mail">
+							<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
+							<textarea class="appForm-message" placeholder="Сообщение"></textarea>
+						</div>
+						<label class="appForm__agree">
+							<input
+								type="checkbox"
+								id="app"
+							 >
+							 <div class="fake-app-btn"></div>
+							<label class="appForm-agreeText" for="app" >Принимаю соглашением условий обработки персональных данных</label>
+						</label>
+						<button class="appForm-btn">Отправить</button>
+					</div>
+				</div>
+
+
+
+
+
+
+				<!--services-->
+				<div class="services__about">
+					<h4 class="services__about-title">Что вообще представляет из себя сервис?</h4>
+					<p class="services__about-text">
+						Lorem ipsum dolor sit amet consectetur. 
+						Mattis tristique faucibus condimentum egestas elementum libero vitae risus nunc. 
+						Tristique diam adipiscing mauris dolor integer integer pretium nibh nunc. Scelerisque sed leo integer vitae. 
+						Congue dignissim amet enim odio velit ultrices placerat.
+					</p>
+				</div>
+
+				<div class="services__wrap">
+					<form class="services__form">
+						<input class="services__form-name" type="text" placeholder="Ваше имя">
+						<input class="services__form-tel" type="text" placeholder="Ваш телефон">
+						<textarea class="services__form-com" placeholder="Ваш комментарий"></textarea>
+						<label class="services__agree">
+							<input
+								type="checkbox"
+								id="services"
+							 >
+							 <div class="services-fake-btn"></div>
+							<label for="services" >Принимаю соглашения оферты</label>
+						</label>
+						<button class="services-btn">Отправить</button>
+					</form>
+
+					<img class="services__img" src="images/services.png" alt="img">
+				</div>
+
+
+
 			</div>
 		</main>
 
