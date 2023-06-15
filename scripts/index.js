@@ -1,21 +1,4 @@
 
-$(function(){
-	$('.offer').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-	});
-})
-
-//$(function(){
-//	$('.news__list').slick({
-//		infinite: true,
-//		slidesToShow: 3,
-//		slidesToScroll: 1,
-//	 });
-//})
-
-
 /////////////////////////// MOBILE MENU  /////////////////////////
 let openMenu = document.querySelector('.header__mobile-burger');
 let closeMenu = document.querySelector('.mobile__menu-close');
@@ -43,6 +26,26 @@ mobMenu.addEventListener('click', function(e){
 })
 
 
+
+/////////////////////////// APP MENU  /////////////////////////
+let appFormWrap = document.getElementById('appFormWrap');
+let menu__btn = document.querySelector('.menu__btn');
+let appForm = document.querySelector('.appForm');
+
+
+menu__btn.addEventListener('click', function(e){
+	appFormWrap.classList.remove('close');								
+	appFormWrap.classList.add('appFormWrap');
+})
+
+appFormWrap.addEventListener('click', function(e){
+	appFormWrap.classList.remove('appFormWrap');
+	appFormWrap.classList.add('close');
+})
+
+appForm.addEventListener('click', function(e){
+   e.stopPropagation()		
+})
 
 
 

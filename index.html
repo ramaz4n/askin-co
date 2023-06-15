@@ -98,7 +98,7 @@
 								src="images/catalog-icon.svg"
 								alt="ico"
 							/>
-							<span class="menu__catalog-name">Каталог</span>
+							<a href="catalog.html" class="menu__catalog-name">Каталог</a>
 							<img
 								class="menu__catalog-closeBtn"
 								src="images/catalog-close.svg"
@@ -119,6 +119,29 @@
 						</ul>
 					</div>
 					<button class="menu__btn">Оставить заявку</button>
+				</div>
+
+				<!--application form-->
+				<div id="appFormWrap" class="appFormWrap">
+					<div class="appForm">
+						<h4 class="appForm-title">Заполните форму заявки</h4>
+						<div class="appForm-inWrap">
+							<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
+							<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
+							<input class="appForm-alInput" type="text" placeholder="E-mail">
+							<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
+							<textarea class="appForm-message" placeholder="Сообщение"></textarea>
+						</div>
+						<label class="appForm__agree">
+							<input
+								type="checkbox"
+								id="app"
+							 >
+							 <div class="fake-app-btn"></div>
+							<label class="appForm-agreeText" for="app" >Принимаю соглашением условий обработки персональных данных</label>
+						</label>
+						<button class="appForm-btn">Отправить</button>
+					</div>
 				</div>
 
 
@@ -313,5 +336,6 @@
 		</script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="scripts/index.js"></script>
+		<script src="scripts/slick.js"></script>
 	</body>
 </html>
