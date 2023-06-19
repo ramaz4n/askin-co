@@ -49,3 +49,29 @@ appForm.addEventListener('click', function(e){
 
 
 
+
+/////////////////////////// SEARCH MOBILE /////////////////////////
+
+let mobileSearch = document.getElementById('mobileSearch');
+let mobile__searchWrap = document.getElementById('mobileSearchWrap');
+let header__mobileSearch = document.querySelector('.header__mobile-search');
+
+
+mobile__searchWrap.addEventListener('click', function(e){
+	mobileSearch.classList.remove('mobile__search-on');								
+	mobileSearch.classList.add('mobile__search-off');
+	mobile__searchWrap.classList.remove('mobile__searchWrap');
+	mobile__searchWrap.classList.add('close');
+})
+
+header__mobileSearch.addEventListener('click', function(e){
+	mobile__searchWrap.classList.remove('close');
+	mobile__searchWrap.classList.add('mobile__searchWrap');
+	mobileSearch.classList.remove('mobile__search-off');
+	mobileSearch.classList.add('mobile__search-on');
+})
+
+
+mobileSearch.addEventListener('click', function(e){
+   e.stopPropagation()		
+})
