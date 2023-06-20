@@ -424,7 +424,7 @@ ul.breadcrumb {
  ul.breadcrumb li+li:before {
 	padding: 8px;
 	color: black;
-	content: url(/images/bredcrums.png);
+	content: url(images/bredcrums.png);
  }
  
  /* Add a color to all links inside the list */
