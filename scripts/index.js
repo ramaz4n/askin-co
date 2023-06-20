@@ -1,5 +1,7 @@
 
 /////////////////////////// MOBILE MENU  /////////////////////////
+// открытие и закрытие мобильного меню (бургер)
+
 let openMenu = document.querySelector('.header__mobile-burger');
 let closeMenu = document.querySelector('.mobile__menu-close');
 let mobileMenuWrap = document.getElementById('mobile__menuWrap');
@@ -27,7 +29,9 @@ mobMenu.addEventListener('click', function(e){
 
 
 
-/////////////////////////// APP MENU  /////////////////////////
+/////////////////////////// APP MODAL  /////////////////////////
+//открытие модалки при клике на ОСТАВИТЬ ЗАЯВКУ
+
 let appFormWrap = document.getElementById('appFormWrap');
 let menu__btn = document.querySelector('.menu__btn');
 let appForm = document.querySelector('.appForm');
@@ -51,6 +55,7 @@ appForm.addEventListener('click', function(e){
 
 
 /////////////////////////// SEARCH MOBILE /////////////////////////
+//открытие блока поиска при клике на инонку поиска в мобилке
 
 let mobileSearch = document.getElementById('mobileSearch');
 let mobile__searchWrap = document.getElementById('mobileSearchWrap');
@@ -74,4 +79,63 @@ header__mobileSearch.addEventListener('click', function(e){
 
 mobileSearch.addEventListener('click', function(e){
    e.stopPropagation()		
+})
+
+
+
+
+/////////////////////////// PRODUCT BLOCK /////////////////////////
+//табы по продукту
+
+let productBtn1 = document.getElementById('productBtn1');
+let productBtn2 = document.getElementById('productBtn2');
+let productBtn3 = document.getElementById('productBtn3');
+let productBtn4 = document.getElementById('productBtn4');
+
+let productBlock1 = document.getElementById('productBlock1');
+let productBlock2 = document.getElementById('productBlock2');
+let productBlock3 = document.getElementById('productBlock3');
+let productBlock4 = document.getElementById('productBlock4');
+
+
+
+productBtn1.addEventListener('click', function(e){
+	productBtn1.classList.add('product__btnBG');
+	productBtn2.classList.remove('product__btnBG');
+	productBtn3.classList.remove('product__btnBG');
+	productBtn4.classList.remove('product__btnBG');
+	productBlock2.classList.add('close');
+	productBlock3.classList.add('close');
+	productBlock4.classList.add('close');
+	productBlock1.classList.remove('close');								
+})
+productBtn2.addEventListener('click', function(e){
+	productBtn2.classList.add('product__btnBG');
+	productBtn1.classList.remove('product__btnBG');
+	productBtn3.classList.remove('product__btnBG');
+	productBtn4.classList.remove('product__btnBG');
+	productBlock1.classList.add('close');
+	productBlock3.classList.add('close');
+	productBlock4.classList.add('close');
+	productBlock2.classList.remove('close');								
+})
+productBtn3.addEventListener('click', function(e){
+	productBtn3.classList.add('product__btnBG');
+	productBtn2.classList.remove('product__btnBG');
+	productBtn1.classList.remove('product__btnBG');
+	productBtn4.classList.remove('product__btnBG');
+	productBlock1.classList.add('close');
+	productBlock2.classList.add('close');
+	productBlock4.classList.add('close');
+	productBlock3.classList.remove('close');								
+})
+productBtn4.addEventListener('click', function(e){
+	productBtn4.classList.add('product__btnBG');
+	productBtn2.classList.remove('product__btnBG');
+	productBtn3.classList.remove('product__btnBG');
+	productBtn1.classList.remove('product__btnBG');
+	productBlock1.classList.add('close');
+	productBlock2.classList.add('close');
+	productBlock3.classList.add('close');
+	productBlock4.classList.remove('close');								
 })
