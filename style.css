@@ -320,15 +320,24 @@ body {
 	display: flex;
 	justify-content: space-between;
 	column-gap: 28px;
-	margin-top: 3px;
+	margin-top: 5px;
 }
 .menu__list--item {
 	font-weight: 400;
 	font-size: 1.125rem;
+	border-bottom: 2px solid #ffffff;
+	transition: all 0.2s ease-in-out; 
+}
+.menu__list--item:hover {
+	border-bottom: 2px solid #000;
 }
 .menu__list--item a{
 	color: black
 }
+.menu__list--itemActive {
+	border-bottom: 2px solid #000;
+}
+
 .menu__btn {
 	width: 206px;
 	height: 43px;
@@ -394,6 +403,40 @@ body {
 		height: 14px;
 	}
 }
+
+/*//////////////////////////// breadcrumbs  //////////////////////////////////*/
+
+/* Style the list */
+ul.breadcrumb {
+	margin-top: 21px;
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #ffffff;
+ }
+ 
+ /* Display list items side by side */
+ ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+ }
+ 
+ /* Add a slash symbol (/) before/behind each list item */
+ ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: url(/images/bredcrums.png);
+ }
+ 
+ /* Add a color to all links inside the list */
+ ul.breadcrumb li a {
+	color: #646464;
+	transition: all 0.3s;
+ }
+ 
+ /* Add a color on mouse-over */
+ ul.breadcrumb li a:hover {
+	color: #000000;
+ }
 
 
 
@@ -623,7 +666,7 @@ body {
 
 .catalog {
 	width: 100%;
-	margin-top: 39px;
+	margin-top: 70px;
 	margin-bottom: 100px;
 }
 .catalog__title {
@@ -1118,7 +1161,7 @@ body {
 }
 
 .newsPage__list {
-	margin-top: 62px;
+	margin-top: 72px;
 	display: flex;
 	justify-content: center;
 	column-gap: 70px;
@@ -1135,7 +1178,7 @@ body {
 
 
 .contact__about {
-	margin-top: 37px;
+	margin-top: 57px;
 	width: 100%;
 }
 .contact__about-title {
@@ -1325,7 +1368,7 @@ body {
 
 
 .about {
-	margin-top: 50px;
+	margin-top: 60px;
 	margin-bottom: 150px;
 }
 .about__top {
