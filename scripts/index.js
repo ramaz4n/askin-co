@@ -29,6 +29,120 @@ mobMenu.addEventListener('click', function(e){
 
 
 
+/////////////////////////// CATALOG MENU  /////////////////////////
+
+let catalog = document.getElementById('catalog');
+let menu__catalogBtn = document.querySelector('.menu__catalog-btn');
+let menu__catalogCloseBtn = document.querySelector('.menu__catalog-closeBtn');
+
+menu__catalogBtn.addEventListener('click', function(e){
+	catalog.classList.toggle('close');		
+	menu__catalogCloseBtn.classList.toggle('catalog__close-btn')					
+	menu__catalogBtn.classList.toggle('close');		
+})
+
+menu__catalogCloseBtn.addEventListener('click', function(e){
+	catalog.classList.toggle('close');		
+	menu__catalogCloseBtn.classList.toggle('catalog__close-btn')					
+	menu__catalogBtn.classList.toggle('close');		
+})
+
+//TAbs
+let catalogItem1 = document.getElementById('catalogItem1');
+let catalogItem2 = document.getElementById('catalogItem2');
+let catalogItem3 = document.getElementById('catalogItem3');
+let catalogItem4 = document.getElementById('catalogItem4');
+
+let catalogBlock1 = document.getElementById('catalogBlock1');
+let catalogBlock2 = document.getElementById('catalogBlock2');
+let catalogBlock3 = document.getElementById('catalogBlock3');
+let catalogBlock4 = document.getElementById('catalogBlock4');
+
+let catalogArrow1 = document.getElementById('catalogArrow1');
+let catalogArrow2 = document.getElementById('catalogArrow2');
+let catalogArrow3 = document.getElementById('catalogArrow3');
+let catalogArrow4 = document.getElementById('catalogArrow4');
+
+
+//let catalogBLocks = document.querySelectorAll('.catalog__itemBlock');
+
+//let catalogArrows = document.querySelectorAll('#catalog__ar');
+
+
+catalogItem1.addEventListener('click', function(e){
+
+	catalogBlock2.classList.add('close')
+	catalogBlock3.classList.add('close')
+	catalogBlock4.classList.add('close')
+
+	catalogItem2.classList.remove('item-bgColor')
+	catalogItem3.classList.remove('item-bgColor')
+	catalogItem4.classList.remove('item-bgColor')
+
+	catalogArrow2.classList.remove('ar__reverse')
+	catalogArrow3.classList.remove('ar__reverse')
+	catalogArrow4.classList.remove('ar__reverse')
+
+	catalogBlock1.classList.toggle('close');								
+	catalogItem1.classList.toggle('item-bgColor');								
+	catalogArrow1.classList.toggle('ar__reverse');								
+})
+
+catalogItem2.addEventListener('click', function(e){
+
+	catalogBlock1.classList.add('close')
+	catalogBlock3.classList.add('close')
+	catalogBlock4.classList.add('close')
+
+	catalogItem1.classList.remove('item-bgColor')
+	catalogItem3.classList.remove('item-bgColor')
+	catalogItem4.classList.remove('item-bgColor')
+
+	catalogArrow1.classList.remove('ar__reverse')
+	catalogArrow3.classList.remove('ar__reverse')
+	catalogArrow4.classList.remove('ar__reverse')
+
+	catalogBlock2.classList.toggle('close');	
+	catalogItem2.classList.toggle('item-bgColor');								
+	catalogArrow2.classList.toggle('ar__reverse');								
+})
+
+catalogItem3.addEventListener('click', function(e){
+	catalogBlock1.classList.add('close')
+	catalogBlock2.classList.add('close')
+	catalogBlock4.classList.add('close')
+
+	catalogItem1.classList.remove('item-bgColor')
+	catalogItem2.classList.remove('item-bgColor')
+	catalogItem4.classList.remove('item-bgColor')
+
+	catalogArrow2.classList.remove('ar__reverse')
+	catalogArrow1.classList.remove('ar__reverse')
+	catalogArrow4.classList.remove('ar__reverse')
+
+	catalogBlock3.classList.toggle('close');	
+	catalogItem3.classList.toggle('item-bgColor');								
+	catalogArrow3.classList.toggle('ar__reverse');								
+
+})
+
+catalogItem4.addEventListener('click', function(e){
+	catalogBlock1.classList.add('close')
+	catalogBlock3.classList.add('close')
+	catalogBlock2.classList.add('close')
+
+	catalogItem1.classList.remove('item-bgColor')
+	catalogItem2.classList.remove('item-bgColor')
+	catalogItem3.classList.remove('item-bgColor')
+
+	catalogArrow2.classList.remove('ar__reverse')
+	catalogArrow3.classList.remove('ar__reverse')
+	catalogArrow1.classList.remove('ar__reverse')
+
+	catalogBlock4.classList.toggle('close');	
+	catalogItem4.classList.toggle('item-bgColor');								
+	catalogArrow4.classList.toggle('ar__reverse');								
+})
 
 
 
