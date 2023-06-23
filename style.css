@@ -696,20 +696,17 @@ ul.breadcrumb {
 
 .offer{
 	width:100%;
-	/*height: 524px;*/
+	height: 524px;
 	margin-top: 21px;
 }
 .offer__block{
-
-	/*height: 100%;*/
-	height: 524px;
+	height: 100%;
 }
 .first-block {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	background-color: #FAFAFA ;
-	/*column-gap: 62px;*/
+	column-gap: 62px;
 }
 .first__block-info{
 	width: 416px;
@@ -872,7 +869,7 @@ ul.breadcrumb {
 	margin-top: 62px;
 	display: flex;
 	justify-content: center;
-	column-gap: 35px;
+	column-gap: 50px;
 	align-items: center;
 }
 .news__item {
@@ -1800,6 +1797,71 @@ ul.breadcrumb {
 
 
 
+
+
+
 .close{
 	display: none;
 }
+
+
+
+
+
+
+/*////////////////////////////  SWIPER   ///////////////////////*/
+
+/* offer swiper*/
+.swiper{
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-prevBtn{
+	position: absolute;
+	top: 92.3%;
+	left: 86.5%;
+	z-index: 15;
+	cursor: pointer;
+}
+.swiper-nextBtn{
+	position: absolute;
+	top: 92.3%;
+	left: 93.7%;
+	z-index: 15;
+	cursor: pointer;
+}
+
+.swiper-pagination-fraction{
+	font-size: 1.25rem;
+	position: absolute;
+	top: 480px;
+	left: 450px;
+}
+.swiper-pagination-current{
+	margin-right: -4px;
+}
+.swiper-pagination-total{
+	margin-left: -4px;
+}
+
+
+
+
+/* offer swiper*/
+
+.news-swiper{
+	width: 100%;
+}
+/*.news-prevBtn{
+	position: absolute;
+	top: 10px;
+	z-index: 15;
+	cursor: pointer;
+}
+.news-nextBtn{
+	position: absolute;
+	top: 30px;
+	z-index: 15;
+	cursor: pointer;
+}*/

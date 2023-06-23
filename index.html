@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
 	<link rel="stylesheet" href="style.css" />
@@ -210,33 +210,42 @@
 			<!--OFFER-->
 
 			<div class="offer">
-				<div class="offer__block first__block">
-					<div class="first__block-info">
-						<p class="first-block-title">Предлагаем лучшее</p>
-						<p class="first-block-text">
-							Компания предлагает продукцию высшего качества.
-							Ведущие офтальмологи и руководители крупных лечебных заведений за эти годы убедились
-							в надежном бизнес-партнерстве с «АСКИН и Ко».
-						</p>
-					</div>
-					<div class="first__block-company">
-						<div class="left__block">
-							<img src="images/heid.png" alt="img">
-							<img class="img2" src="images/reis.png" alt="img">
-							<img class="img3" src="images/tome.png" alt="img">
-							<img src="images/oer.png" alt="img">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide offer__block first-block">
+							<div class="first__block-info">
+								<p class="first-block-title">Предлагаем лучшее</p>
+								<p class="first-block-text">
+									Компания предлагает продукцию высшего качества.
+									Ведущие офтальмологи и руководители крупных лечебных заведений за эти годы убедились
+									в надежном бизнес-партнерстве с «АСКИН и Ко».
+								</p>
+							</div>
+							<div class="first__block-company">
+								<div class="left__block">
+									<img src="images/heid.png" alt="img">
+									<img class="img2" src="images/reis.png" alt="img">
+									<img class="img3" src="images/tome.png" alt="img">
+									<img src="images/oer.png" alt="img">
+								</div>
+								<div class="right__block">
+									<img src="images/snip.png" alt="img">
+									<img class="img4" src="images/volk.png" alt="img">
+									<img src="images/lumenis.png" alt="img">
+		
+								</div>
+							</div>
 						</div>
-						<div class="right__block">
-							<img src="images/snip.png" alt="img">
-							<img class="img4" src="images/volk.png" alt="img">
-							<img src="images/lumenis.png" alt="img">
+		
+						<div class="swiper-slide offer__block"></div>
+						<div class="swiper-slide offer__block"></div>
+					</div>
 
-						</div>
-					</div>
+					<div class="swiper-pagination"></div>
+
+					<img  class="swiper-prevBtn" src="images/left-arrow.svg" alt="">
+					<img  class="swiper-nextBtn" src="images/right-arrow.svg" alt="">
 				</div>
-
-				<div class="offer__block"></div>
-				<div class="offer__block"></div>
 
 			</div>
 
@@ -266,13 +275,16 @@
 
 
 			<!--NEWS-->
-			<div class="news">
+			<div class="news-swiper news">
+				
 				<div class="news__top">
 					<h3 class="news__title">Последние новости:</h3>
 					<button class="news__btn"> Перейти в раздел новости</button>
 				</div>
-				<div class="news__list">
-					<div class="news__item">
+
+				<div class="swiper-wrapper news__list">
+
+					<div class="swiper-slide news__item">
 						<img src="images/xplat.png" alt="img">
 						<p class="news__item-name">Хтрургическая платформа OS4</p>
 						<span class="news__item-text">
@@ -281,7 +293,7 @@
 						<a href="about-news.html" class="news__item-btn">Читать далее ></a>
 					</div>
 
-					<div class="news__item">
+					<div class="swiper-slide news__item">
 						<img src="images/shift.png" alt="img">
 						<p class="news__item-name">Хтрургическая платформа OS4</p>
 						<span class="news__item-text">
@@ -290,15 +302,39 @@
 						<a href="about-news.html" class="news__item-btn">Читать далее ></a>
 					</div>
 
-					<div class="news__item">
+					<div class="swiper-slide news__item">
 						<img src="images/pero.png" alt="img">
-						<p class="news__item-name">Хтрургическая платформа OS4</p>
+						<p class="news__item-name">Хирургическая платформа OS4</p>
 						<span class="news__item-text">
 							Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
 						</span>
 						<a href="about-news.html" class="news__item-btn">Читать далее ></a>
 					</div>
+
+					<div class="swiper-slide news__item">
+						<img src="images/pero.png" alt="img">
+						<p class="news__item-name">Хирургическая платформа OS4</p>
+						<span class="news__item-text">
+							Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+						</span>
+						<a href="about-news.html" class="news__item-btn">Читать далее ></a>
+					</div>
+
+					<div class="swiper-slide news__item">
+						<img src="images/pero.png" alt="img">
+						<p class="news__item-name">Хирургическая платформа OS4</p>
+						<span class="news__item-text">
+							Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+						</span>
+						<a href="about-news.html" class="news__item-btn">Читать далее ></a>
+					</div>
+
+
 				</div>
+				<div class="news-pagination"></div>
+
+				<img  class="news-prevBtn" src="images/left-arrow.svg" alt="">
+				<img  class="news-nextBtn" src="images/right-arrow.svg" alt="">
 			</div>
 
 
@@ -386,12 +422,9 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
-		</script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="scripts/swiper.js"></script>
 	<script src="scripts/index.js"></script>
-	<script src="scripts/slick.js"></script>
 </body>
 
 </html>
