@@ -838,7 +838,7 @@ ul.breadcrumb {
 /*//////////////////////////// NEWS BLOCK //////////////////////////////////*/
 
 .news {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
 .news__top {
 	display: flex;
@@ -1240,7 +1240,9 @@ ul.breadcrumb {
 
 /*//////////////////////////// PARTNERS BLOCK //////////////////////////////////*/
 
-
+.partners{
+	margin-bottom: 50px;
+}
 
 .partners__title {
 	margin-top: 40px;
@@ -1249,7 +1251,7 @@ ul.breadcrumb {
 }
 .partners__list {
 	width: 100%;
-	padding: 30px 0;
+	padding: 40px 10px 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1257,9 +1259,7 @@ ul.breadcrumb {
 	margin-bottom: 50px;
 }
 .partners__list-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: auto;
 }
 
 
@@ -1811,7 +1811,8 @@ ul.breadcrumb {
 
 /*////////////////////////////  SWIPER   ///////////////////////*/
 
-/* offer swiper*/
+/* //////////////////////////   offer swiper   //////////////////////////////*/
+
 .swiper{
 	width: 100%;
 	height: 100%;
@@ -1848,20 +1849,71 @@ ul.breadcrumb {
 
 
 
-/* offer swiper*/
+/*//////////////////////////////   news swiper   /////////////////////////////*/
 
 .news-swiper{
+	box-sizing: border-box;
 	width: 100%;
+	overflow: hidden;
+	position: relative;
 }
-/*.news-prevBtn{
+.news-prevBtn{
+	padding: 5px;
 	position: absolute;
-	top: 10px;
+	top: 89.5%;
+	left: 92%;
 	z-index: 15;
 	cursor: pointer;
 }
 .news-nextBtn{
+	padding: 5px;
 	position: absolute;
-	top: 30px;
+	top: 89.5%;
+	left: 98%;
 	z-index: 15;
 	cursor: pointer;
-}*/
+}
+
+.news-pagination{
+	position: absolute;
+	top: 89.4%;
+	left: 94.3%;
+}
+
+
+
+
+/*//////////////////////////////   partners swiper  /////////////////////////////*/
+.partners-swiper{
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.part-prev{
+	padding: 5px;
+	position: absolute;
+	top: 87%;
+	left: 84%;
+	z-index: 15;
+	cursor: pointer;
+}
+.part-next{
+	padding: 5px;
+	position: absolute;
+	top: 87%;
+	left: 90%;
+	z-index: 15;
+	cursor: pointer;
+}
+
+.part-pagination{
+	top: 87.5%;
+	left: 86.4%;
+}
+
+.partners__list .swiper-slide{
+	width: auto !important;
+}
+

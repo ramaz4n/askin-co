@@ -1,374 +1,383 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 
-	<link rel="stylesheet" href="style.css" />
-	<title>ASKIN&CO</title>
-</head>
+		<link rel="stylesheet" href="style.css" />
+		<title>ASKIN&CO</title>
+	</head>
 
-<body>
-	<div class="container">
-		<header class="header">
-			<a class="logo" href="index.html">
-				<img src="images/logo.svg" alt="logo" />
-			</a>
-			<div class="header_search">
-				<img class="header__search-ico" src="images/search.png" alt="ico" />
-				<input class="header__search-input" type="text" placeholder="Поиск" />
-			</div>
-			<div class="header__contacts">
-				<div class="header__contacts-message">
-					<a href=""> <img src="images/ms.svg" alt="ico" /> </a>
-					<a href=""> <img src="images/vk.svg" alt="ico" /> </a>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a class="logo" href="index.html">
+					<img src="images/logo.svg" alt="logo" />
+				</a>
+				<div class="header_search">
+					<img class="header__search-ico" src="images/search.png" alt="ico" />
+					<input class="header__search-input" type="text" placeholder="Поиск" />
 				</div>
-				<div class="header__contacts-numbers">
-					<a href="tel:74959555562">+7 (495) 955-55-62</a>
-					<a href="tel:79161888289">+7 (916) 188-82-89</a>
-					<a href="tel:79850078899">+7 (985) 007-88-99</a>
-				</div>
-			</div>
-
-			<!-- for mobile-->
-			<div class="header__mobileInfo">
-				<img class="header__mobile-search" src="images/search-black.svg" alt="ico" />
-				<img class="header__mobile-burger" src="images/menu-btn.svg" alt="ico" />
-			</div>
-
-			<div id="mobile__menuWrap" class="close">
-				<div class="mobile__menu">
-					<img class="mobile__menu-close" src="images/mobile-menu-close.svg" alt="ico" />
-					<ul class="mobile__menu-list">
-						<li class="mobile__menu-listItem">
-							<a href="about.html"> О компании</a>
-						</li>
-						<li class="mobile__menu-listItem">
-							<a href="services.html"> Сервис </a>
-						</li>
-						<li class="mobile__menu-listItem">
-							<a href="news.html"> Новости</a>
-						</li>
-						<li class="mobile__menu-listItem">
-							<a href="contacts.html"> Контакты</a>
-						</li>
-					</ul>
-					<div class="mobile__menu-numbers">
-						<a href="tel:74959555562">+7 (495) 955-55-62</a>
-						<a href="tel:79161888289">+7 (916) 188-82-89</a>
-						<a href="tel:79850078899">+7 (985) 007-88-99</a>
-					</div>
-					<div class="mobile__menu-message">
+				<div class="header__contacts">
+					<div class="header__contacts-message">
 						<a href=""> <img src="images/ms.svg" alt="ico" /> </a>
 						<a href=""> <img src="images/vk.svg" alt="ico" /> </a>
 					</div>
-				</div>
-			</div>
-
-		</header>
-	</div>
-
-
-	<!--mobile search-->
-	<div id="mobileSearchWrap" class="close">
-		<div id="mobileSearch" class="mobile__search-off">
-			<img class="mobile__search-ico" src="images/search-black.svg" alt="ico" />
-			<input class="mobile__search-input" type="text" placeholder="Поиск">
-		</div>
-	</div>
-
-
-
-	<main>
-		<div class="container">
-
-
-			<!-- menu -->
-			<div class="menu">
-				<div class="menu__wrap">
-					<div class="menu__catalog">
-						<img class="menu__catalog-btn" src="images/catalog-icon.svg" alt="ico" />
-						<a href="catalog.html" class="menu__catalog-name">Каталог</a>
-						<img class="menu__catalog-closeBtn" src="images/catalog-close.svg" alt="ico" />
-					</div>
-					<ul class="menu__list">
-						<li class="menu__list--item">
-							<a href="about.html">О компании</a>
-						</li>
-						<li class="menu__list--item">
-							<a href="services.html">Сервис</a>
-						</li>
-						<li class="menu__list--item"><a href="news.html">Новости</a></li>
-						<li class="menu__list--item">
-							<a href="contacts.html">Контакты</a>
-						</li>
-					</ul>
-				</div>
-				<button class="menu__btn">Оставить заявку</button>
-
-
-
-				<div id="catalog" class="catalog-menu close">
-					<ul class="catalog-menu__list">
-						<li id="catalogItem1" class="catalog-menu__list-item">
-							<span>Лазерное оборудование </span> 
-							<img id="catalogArrow1" class="catalog-arrows" src="images/bredcrums.png" alt="">
-						</li>
-						
-						<ul id="catalogBlock1" class="catalog__itemBlock catalog__block1 close">
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">ОСТ+ангиограф</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Периметр</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Ретинотомограф</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Тонометр</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Рефкератометр</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Проектор знаков</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Офтальмоскоп</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Узи</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Набор пробных линз/пробные оправы</a>
-							</li>
-							<li class="catalog__itemBlock-elem">
-								&#8226; <a href="">Электрофизиология</a>
-							</li>
-						</ul>
-
-						<li id="catalogItem2" class="catalog-menu__list-item">
-							<span>Офтальмоскопические линзы</span>
-							<img id="catalogArrow2" class="catalog-arrows" src="images/bredcrums.png" alt="">
-						</li>
-
-						<ul id="catalogBlock2" class="catalog__itemBlock catalog__block2 close"></ul>
-
-						<li id="catalogItem3" class="catalog-menu__list-item">
-							<span>Микрохирургическое оборудование </span> 
-							<img id="catalogArrow3" class="catalog-arrows" src="images/bredcrums.png" alt="">
-						</li>
-
-						<ul id="catalogBlock3" class="catalog__itemBlock catalog__block3 close"></ul>
-
-						<li id="catalogItem4" class="catalog-menu__list-item">
-							<span>Диагностика</span> 
-							<img id="catalogArrow4" class="catalog-arrows" src="images/bredcrums.png" alt="">
-						</li>
-
-						<ul id="catalogBlock4" class="catalog__itemBlock catalog__block4 close"></ul>
-
-					</ul>
-				</div>
-			</div>
-
-
-			<ul class="breadcrumb">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="product.html">Товар</a></li>
-				<li><a href="#">Lumenis</a></li>
-			</ul>
-
-
-
-			<!--application form-->
-			<div id="appFormWrap" class="close">
-				<div class="appForm">
-					<h4 class="appForm-title">Заполните форму заявки</h4>
-					<div class="appForm-inWrap">
-						<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
-						<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
-						<input class="appForm-alInput" type="text" placeholder="E-mail">
-						<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
-						<textarea class="appForm-message" placeholder="Сообщение"></textarea>
-					</div>
-					<label class="appForm__agree">
-						<input type="checkbox" id="app">
-						<div class="fake-app-btn"></div>
-						<label class="appForm-agreeText" for="app">Принимаю соглашением условий обработки персональных
-							данных</label>
-					</label>
-					<button class="appForm-btn">Отправить</button>
-				</div>
-			</div>
-
-
-
-
-
-
-			<!-- about firm -->
-
-			<div class="about-firm">
-				<img src="images/lumenis.png" alt="img" class="about-firm__img">
-				<p class="about-firm__text">
-					Компания Lumenis является мировым лидером в области медицинских технологий, 
-					основанных на различных видах энергии, для Эстетики, Хирургии, Офтальмологии.
-					Мы работаем для пациентов, предоставляя инновационные, минимально инвазивные решения для 
-					превосходных клинических результатов.
-				</p>
-				<div class="about-firm__item-list">
-
-					<a class="about-firm__item" href="product.html" >
-						<img src="images/lazer.png" alt="img">
-						<div class="about-firm__item-info">
-							<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
-							<p class="about-firm__item-text">
-								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
-							</p>
-						</div>
-					</a>
-					<a class="about-firm__item" href="product.html" >
-						<img src="images/lazer.png" alt="img">
-						<div class="about-firm__item-info">
-							<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
-							<p class="about-firm__item-text">
-								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
-							</p>
-						</div>
-					</a>
-					<a class="about-firm__item" href="product.html" >
-						<img src="images/lazer.png" alt="img">
-						<div class="about-firm__item-info">
-							<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
-							<p class="about-firm__item-text">
-								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
-							</p>
-						</div>
-					</a>
-					<a class="about-firm__item" href="product.html" >
-						<img src="images/lazer.png" alt="img">
-						<div class="about-firm__item-info">
-							<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
-							<p class="about-firm__item-text">
-								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
-							</p>
-						</div>
-					</a>
-					<a class="about-firm__item" href="product.html" >
-						<img src="images/lazer.png" alt="img">
-						<div class="about-firm__item-info">
-							<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
-							<p class="about-firm__item-text">
-								Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
-							</p>
-						</div>
-					</a>
-
-				</div>
-			</div>
-
-
-
-			<!-- partners -->
-			<div class="partners">
-				<h4 class="partners__title">Другие партнеры:</h4>
-				<div class="partners__list">
-					<div class="partners__list-item">
-						<img src="images/p-hair.png" alt="img">
-					</div>
-					<div class="partners__list-item">
-						<img src="images/p-oer.png" alt="img">
-					</div>
-					<div class="partners__list-item">
-						<img src="images/p-ries.png" alt="img">
-					</div>
-					<div class="partners__list-item">
-						<img src="images/p-tom.png" alt="img">
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-
-
-		<!--HELP-->
-		<div class="helpWrap">
-			<div class="container">
-				<div class="help">
-					<form class="help__left">
-						<p class="help__title">Нужна помощь?</p>
-						<input class="help__name" type="text" placeholder="Ваше имя">
-						<input class="help__tel" type="text" placeholder="Ваш телефон">
-						<textarea class="help__com" placeholder="Ваш комментарий"></textarea>
-						<label class="help__agree">
-							<input type="checkbox" id="offer">
-							<div class="fake-btn"></div>
-							<label for="offer">Принимаю соглашения оферты</label>
-						</label>
-						<button class="help__btn">Отправить</button>
-					</form>
-
-					<img class="help__img" src="images/help-tel.png" alt="img">
-	
-				</div>
-			</div>
-		</div>
-
-
-
-	</main>
-
-
-
-
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__wrapper">
-				<a class="footer__logo" href="index.html">
-					<img src="images/footer-logo.svg" alt="logo" />
-				</a>
-				<div class="footer__info">
-					<div class="footer__info-text">
-						<span>Copyright © 2015 ООО "АСКИН и Ко"</span>
-						<span>119334, Москва, 5-й Донской пр-д., д.15, комата 30</span>
-						<span>E-mail: <a href="mailto: info@askin.ru">info@askin.ru</a></span>
-					</div>
-					<div class="footer__info-num">
+					<div class="header__contacts-numbers">
 						<a href="tel:74959555562">+7 (495) 955-55-62</a>
 						<a href="tel:79161888289">+7 (916) 188-82-89</a>
 						<a href="tel:79850078899">+7 (985) 007-88-99</a>
 					</div>
 				</div>
-				<div class="arus">
-					<a class="arus__link" href="">
-						<img src="images/arus.svg" alt="ico" />
-						<span>Сайт разработан ARUS STUDIO</span>
-					</a>
+
+				<!-- for mobile-->
+				<div class="header__mobileInfo">
+					<img class="header__mobile-search" src="images/search-black.svg" alt="ico" />
+					<img class="header__mobile-burger" src="images/menu-btn.svg" alt="ico" />
 				</div>
+
+				<div id="mobile__menuWrap" class="close">
+					<div class="mobile__menu">
+						<img class="mobile__menu-close" src="images/mobile-menu-close.svg" alt="ico" />
+						<ul class="mobile__menu-list">
+							<li class="mobile__menu-listItem">
+								<a href="about.html"> О компании</a>
+							</li>
+							<li class="mobile__menu-listItem">
+								<a href="services.html"> Сервис </a>
+							</li>
+							<li class="mobile__menu-listItem">
+								<a href="news.html"> Новости</a>
+							</li>
+							<li class="mobile__menu-listItem">
+								<a href="contacts.html"> Контакты</a>
+							</li>
+						</ul>
+						<div class="mobile__menu-numbers">
+							<a href="tel:74959555562">+7 (495) 955-55-62</a>
+							<a href="tel:79161888289">+7 (916) 188-82-89</a>
+							<a href="tel:79850078899">+7 (985) 007-88-99</a>
+						</div>
+						<div class="mobile__menu-message">
+							<a href=""> <img src="images/ms.svg" alt="ico" /> </a>
+							<a href=""> <img src="images/vk.svg" alt="ico" /> </a>
+						</div>
+					</div>
+				</div>
+
+			</header>
+		</div>
+
+
+		<!--mobile search-->
+		<div id="mobileSearchWrap" class="close">
+			<div id="mobileSearch" class="mobile__search-off">
+				<img class="mobile__search-ico" src="images/search-black.svg" alt="ico" />
+				<input class="mobile__search-input" type="text" placeholder="Поиск">
 			</div>
 		</div>
-	</footer>
 
 
 
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
-	</script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="scripts/index.js"></script>
-	<script src="scripts/slick.js"></script>
-</body>
+		<main>
+			<div class="container">
+
+
+				<!-- menu -->
+				<div class="menu">
+					<div class="menu__wrap">
+						<div class="menu__catalog">
+							<img class="menu__catalog-btn" src="images/catalog-icon.svg" alt="ico" />
+							<a href="catalog.html" class="menu__catalog-name">Каталог</a>
+							<img class="menu__catalog-closeBtn" src="images/catalog-close.svg" alt="ico" />
+						</div>
+						<ul class="menu__list">
+							<li class="menu__list--item">
+								<a href="about.html">О компании</a>
+							</li>
+							<li class="menu__list--item">
+								<a href="services.html">Сервис</a>
+							</li>
+							<li class="menu__list--item"><a href="news.html">Новости</a></li>
+							<li class="menu__list--item">
+								<a href="contacts.html">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<button class="menu__btn">Оставить заявку</button>
+
+
+
+					<div id="catalog" class="catalog-menu close">
+						<ul class="catalog-menu__list">
+							<li id="catalogItem1" class="catalog-menu__list-item">
+								<span>Лазерное оборудование </span> 
+								<img id="catalogArrow1" class="catalog-arrows" src="images/bredcrums.png" alt="">
+							</li>
+							
+							<ul id="catalogBlock1" class="catalog__itemBlock catalog__block1 close">
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">ОСТ+ангиограф</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Периметр</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Ретинотомограф</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Тонометр</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Рефкератометр</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Проектор знаков</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Офтальмоскоп</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Узи</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Набор пробных линз/пробные оправы</a>
+								</li>
+								<li class="catalog__itemBlock-elem">
+									&#8226; <a href="">Электрофизиология</a>
+								</li>
+							</ul>
+
+							<li id="catalogItem2" class="catalog-menu__list-item">
+								<span>Офтальмоскопические линзы</span>
+								<img id="catalogArrow2" class="catalog-arrows" src="images/bredcrums.png" alt="">
+							</li>
+
+							<ul id="catalogBlock2" class="catalog__itemBlock catalog__block2 close"></ul>
+
+							<li id="catalogItem3" class="catalog-menu__list-item">
+								<span>Микрохирургическое оборудование </span> 
+								<img id="catalogArrow3" class="catalog-arrows" src="images/bredcrums.png" alt="">
+							</li>
+
+							<ul id="catalogBlock3" class="catalog__itemBlock catalog__block3 close"></ul>
+
+							<li id="catalogItem4" class="catalog-menu__list-item">
+								<span>Диагностика</span> 
+								<img id="catalogArrow4" class="catalog-arrows" src="images/bredcrums.png" alt="">
+							</li>
+
+							<ul id="catalogBlock4" class="catalog__itemBlock catalog__block4 close"></ul>
+
+						</ul>
+					</div>
+				</div>
+
+
+				<ul class="breadcrumb">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="product.html">Товар</a></li>
+					<li><a href="#">Lumenis</a></li>
+				</ul>
+
+
+
+				<!--application form-->
+				<div id="appFormWrap" class="close">
+					<div class="appForm">
+						<h4 class="appForm-title">Заполните форму заявки</h4>
+						<div class="appForm-inWrap">
+							<input class="appForm-alInput" type="text" placeholder="Название вашей организации">
+							<input class="appForm-input" type="text" placeholder="ФИО контактного лица">
+							<input class="appForm-alInput" type="text" placeholder="E-mail">
+							<input class="appForm-input" type="text" placeholder=" +7 (000) 000 00 00 ">
+							<textarea class="appForm-message" placeholder="Сообщение"></textarea>
+						</div>
+						<label class="appForm__agree">
+							<input type="checkbox" id="app">
+							<div class="fake-app-btn"></div>
+							<label class="appForm-agreeText" for="app">Принимаю соглашением условий обработки персональных
+								данных</label>
+						</label>
+						<button class="appForm-btn">Отправить</button>
+					</div>
+				</div>
+
+
+
+
+
+
+				<!-- about firm -->
+
+				<div class="about-firm">
+					<img src="images/lumenis.png" alt="img" class="about-firm__img">
+					<p class="about-firm__text">
+						Компания Lumenis является мировым лидером в области медицинских технологий, 
+						основанных на различных видах энергии, для Эстетики, Хирургии, Офтальмологии.
+						Мы работаем для пациентов, предоставляя инновационные, минимально инвазивные решения для 
+						превосходных клинических результатов.
+					</p>
+					<div class="about-firm__item-list">
+
+						<a class="about-firm__item" href="product.html" >
+							<img src="images/lazer.png" alt="img">
+							<div class="about-firm__item-info">
+								<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
+								<p class="about-firm__item-text">
+									Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+								</p>
+							</div>
+						</a>
+						<a class="about-firm__item" href="product.html" >
+							<img src="images/lazer.png" alt="img">
+							<div class="about-firm__item-info">
+								<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
+								<p class="about-firm__item-text">
+									Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+								</p>
+							</div>
+						</a>
+						<a class="about-firm__item" href="product.html" >
+							<img src="images/lazer.png" alt="img">
+							<div class="about-firm__item-info">
+								<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
+								<p class="about-firm__item-text">
+									Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+								</p>
+							</div>
+						</a>
+						<a class="about-firm__item" href="product.html" >
+							<img src="images/lazer.png" alt="img">
+							<div class="about-firm__item-info">
+								<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
+								<p class="about-firm__item-text">
+									Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+								</p>
+							</div>
+						</a>
+						<a class="about-firm__item" href="product.html" >
+							<img src="images/lazer.png" alt="img">
+							<div class="about-firm__item-info">
+								<h5 class="about-firm__item-title">Хирургическая платформа OS 4</h5>
+								<p class="about-firm__item-text">
+									Использует законы физики, что делает офтальмохирургию более безопасной, простой и эффективной.
+								</p>
+							</div>
+						</a>
+
+					</div>
+				</div>
+
+
+
+							<!--PARTNERS-->
+				<div class="container">
+					<div class="partners-swiper partners">
+						<h4 class="partners__title">Наши партнеры:</h4>
+						<div class="swiper-wrapper partners__list ">
+
+							<img class="swiper-slide partners__list-item" src="images/p-hair.png" alt="img">
+
+							<img  class="swiper-slide partners__list-item" src="images/p-oer.png" alt="img">
+
+							<img  class="swiper-slide partners__list-item" src="images/p-ries.png" alt="img">
+
+							<img  class="swiper-slide partners__list-item" src="images/p-tom.png" alt="img">
+
+							<img  class="swiper-slide partners__list-item" src="images/p-tom.png" alt="img">
+
+						</div>
+
+						<div class="part-pagination">
+							<span class="swiper-pagination-current"></span> 
+							/ 
+							<span class="swiper-pagination-total"></span>
+						</div>
+
+						<img  class="part-prev" src="images/left-arrow.svg" alt="">
+						<img  class="part-next" src="images/right-arrow.svg" alt="">
+					</div>
+				</div>	
+
+			</div>
+
+
+
+			<!--HELP-->
+			<div class="helpWrap">
+				<div class="container">
+					<div class="help">
+						<form class="help__left">
+							<p class="help__title">Нужна помощь?</p>
+							<input class="help__name" type="text" placeholder="Ваше имя">
+							<input class="help__tel" type="text" placeholder="Ваш телефон">
+							<textarea class="help__com" placeholder="Ваш комментарий"></textarea>
+							<label class="help__agree">
+								<input type="checkbox" id="offer">
+								<div class="fake-btn"></div>
+								<label for="offer">Принимаю соглашения оферты</label>
+							</label>
+							<button class="help__btn">Отправить</button>
+						</form>
+
+						<img class="help__img" src="images/help-tel.png" alt="img">
+		
+					</div>
+				</div>
+			</div>
+
+
+
+		</main>
+
+
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<a class="footer__logo" href="index.html">
+						<img src="images/footer-logo.svg" alt="logo" />
+					</a>
+					<div class="footer__info">
+						<div class="footer__info-text">
+							<span>Copyright © 2015 ООО "АСКИН и Ко"</span>
+							<span>119334, Москва, 5-й Донской пр-д., д.15, комата 30</span>
+							<span>E-mail: <a href="mailto: info@askin.ru">info@askin.ru</a></span>
+						</div>
+						<div class="footer__info-num">
+							<a href="tel:74959555562">+7 (495) 955-55-62</a>
+							<a href="tel:79161888289">+7 (916) 188-82-89</a>
+							<a href="tel:79850078899">+7 (985) 007-88-99</a>
+						</div>
+					</div>
+					<div class="arus">
+						<a class="arus__link" href="">
+							<img src="images/arus.svg" alt="ico" />
+							<span>Сайт разработан ARUS STUDIO</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+	
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="scripts/swiper.js"></script>
+		<script src="scripts/index.js"></script>
+	</body>
 
 </html>

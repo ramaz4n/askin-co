@@ -28,9 +28,29 @@ const swiperNews = new Swiper('.news-swiper', {
 	  nextEl: '.news-nextBtn',
 	  prevEl: '.news-prevBtn',
 	},
+
+	loop: true,
+	slidesPerView: 3.5,
+	slidesPerGroup: 1,
+ });
+
+
+
+ const swiperPartners = new Swiper('.partners-swiper', {
+	// If we need pagination
+	pagination: {
+	  el: '.part-pagination',
+	  type: 'fraction',
+	},
+ 
+	// Navigation arrows
+	navigation: {
+		nextEl: '.part-next',
+		prevEl: '.part-prev',
+	},
 	
 	loop: true,
-	slidesPerView: "auto",
+	slidesPerView: 4,
 	slidesPerGroup: 1,
 
  });
