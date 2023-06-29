@@ -860,6 +860,9 @@ ul.breadcrumb {
 	font-size: 1.125rem;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .news__btn:hover{
 	background-color: #ffffff;
@@ -1383,7 +1386,6 @@ ul.breadcrumb {
 }
 .product__about {
 	display: flex;
-
 }
 .product__about-img {
 	width: 393px;
@@ -1392,15 +1394,12 @@ ul.breadcrumb {
 .product__about-info {
 	margin-left: 53px;
 	margin-top: 60px;
+	display: flex;
+	flex-direction: column;
 }
 .product__about-topInfo {
 	display: flex;
 	flex-direction: column;
-}
-.product__about-mobImg {
-	display: none;
-	width: 163px;
-	height: 173px;
 }
 .product__about-logoImg {
 	width: 135px;
@@ -1476,6 +1475,29 @@ ul.breadcrumb {
 .product__text p{
 	margin-bottom: 10px;
 }
+.product__about-gallery{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.product__gallery-btn{
+	width: 77px;
+	height: 76px;
+	background: #ECECEC;
+}
+.product__gallery-list{
+	width: 257px;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	cursor: pointer;
+	margin-top: 14px;
+}
+
+.product-mobText{
+	display: none;
+}
 
 
 
@@ -1493,7 +1515,7 @@ ul.breadcrumb {
 .about__top {
 	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: start;
 }
 .about__top-text {
 	margin-left: 33px;
