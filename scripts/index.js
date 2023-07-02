@@ -257,3 +257,50 @@ productBtn4.addEventListener('click', function(e){
 	productBlock3.classList.add('close');
 	productBlock4.classList.remove('close');								
 })
+
+
+
+
+
+
+
+
+///////////////////////////  PRODUCT GALLERY  /////////////////////////
+
+let galleryBtn1 = document.querySelector('#gallery-btn1');
+let galleryBtn2 = document.querySelector('#gallery-btn2');
+let galleryBtn3 = document.querySelector('#gallery-btn3');
+
+let galleryImg1 = document.querySelector('#gallery-img1');
+let galleryImg2 = document.querySelector('#gallery-img2');
+let galleryImg3 = document.querySelector('#gallery-img3');
+
+galleryBtn1.addEventListener('click', function(e){
+	galleryBtn1.classList.add("active__gallery-btn")								
+	galleryBtn2.classList.remove("active__gallery-btn")								
+	galleryBtn3.classList.remove("active__gallery-btn")	
+
+	galleryImg1.classList.remove("close")								
+	galleryImg2.classList.add("close")								
+	galleryImg3.classList.add("close")								
+})
+
+galleryBtn2.addEventListener('click', function(e){
+	galleryBtn2.classList.add("active__gallery-btn")								
+	galleryBtn1.classList.remove("active__gallery-btn")								
+	galleryBtn3.classList.remove("active__gallery-btn")	
+
+	galleryImg2.classList.remove("close")								
+	galleryImg1.classList.add("close")								
+	galleryImg3.classList.add("close")								
+})
+
+galleryBtn3.addEventListener('click', function(e){
+	galleryBtn3.classList.add("active__gallery-btn")								
+	galleryBtn2.classList.remove("active__gallery-btn")								
+	galleryBtn1.classList.remove("active__gallery-btn")	
+
+	galleryImg3.classList.remove("close")								
+	galleryImg2.classList.add("close")								
+	galleryImg1.classList.add("close")								
+})

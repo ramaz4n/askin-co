@@ -9,7 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 	<link rel="stylesheet" href="style.css" />
 	<title>ASKIN&CO</title>
@@ -216,21 +216,25 @@
 
 
 				<div class="product__about">
-					<div class="product__about-gallery">
-						<img class="product__about-img" src="images/lazer.png" alt="img">
+					<div class="product__about-gallery product-swiper">
+
+						<img id="gallery-img1" class="product__about-img " src="images/lazer.png" alt="img">
+						<img id="gallery-img2" class="product__about-img close" src="images/benefit.png" alt="img">
+						<img id="gallery-img3" class="product__about-img close" src="images/aboutnews.png" alt="img">
 
 						<div class="product__gallery-list">
-							<div class="product__gallery-btn">
-								<img src="" alt="">
+							<div id="gallery-btn1" class="product__gallery-btn active__gallery-btn">
+								<img src="images/lazer.png" alt="">
 							</div>
-							<div class="product__gallery-btn">
-								<img src="" alt="">
+							<div id="gallery-btn2" class="product__gallery-btn ">
+								<img src="images/benefit.png" alt="">
 							</div>
-							<div class="product__gallery-btn">
-								<img src="" alt="">
+							<div id="gallery-btn3" class="product__gallery-btn ">
+								<img src="images/aboutnews.png" alt="">
 							</div>
 						</div>
 					</div>
+
 					<div class="product__about-info">
 						<div class="product__about-topInfo">
 							<img class="product__about-logoImg" src="images/lumenis.png" alt="img">
@@ -315,19 +319,19 @@
 							</tr>
 							<tr>
 								<td class="main-td" >Размеры (консоль)</td>
-								<td class="info-td"></td>
+								<td class="info-td">Один порт 15,2 см (6 дюймов) х 25,4 см (10 дюймов) х 35.6 см (14 дюймов) Двойной порт 15,2 (6 дюймов) х 25,4 см (10 дюймов) х 37.5 см (14,5 дюймов)</td>
 							</tr>
 							<tr>
 								<td class="main-td" >Масса</td>
-								<td class="info-td"></td>
+								<td class="info-td">8 кг или 17,5 фунтов</td>
 							</tr>
 							<tr>
 								<td class="main-td" >Системы доставки</td>
-								<td class="info-td"></td>
+								<td class="info-td">Адаптер для целевой лампы Lazerlink Z-1000 (для Zeiss * SL 130,30SL,20SL и 125 SL); Converging Optics Lazer link, Keeler * Heine * LIO Широкий выбор стандартных, прямых, изогнутых, аспирационных, освещающих и ступенчатых эндофотокоагуляционных зондов размеров 20, 23, 25 калибра, среди прочего</td>
 							</tr>
 							<tr>
 								<td class="main-td" >Физические характеристики</td>
-								<td class="info-td"></td>
+								<td class="info-td">Высота 15,2 см (6 дюймов), ширина 25,4 см (10 дюймов), глубина (система с одним портом) 35.6 см (14 дюймов), глубина (система с двумя потами) 37,5 см (14,5 дюймов), вес 8 кг ()17 фунтов </td>
 							</tr>
 						</table>
 					</div>
@@ -449,12 +453,10 @@
 
 
 
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
-		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
-		</script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="scripts/swiper.js"></script>
 	<script src="scripts/index.js"></script>
-	<script src="scripts/slick.js"></script>
+
 </body>
 
 </html>

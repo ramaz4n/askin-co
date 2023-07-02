@@ -66,3 +66,7 @@ const swiperNews = new Swiper('.news-swiper', {
 	slidesPerGroup: 1,
 
  });
+
+
+
+ 
