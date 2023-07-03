@@ -267,14 +267,17 @@ productBtn4.addEventListener('click', function(e){
 
 ///////////////////////////  PRODUCT GALLERY  /////////////////////////
 
+//получаем сами кнопки
 let galleryBtn1 = document.querySelector('#gallery-btn1');
 let galleryBtn2 = document.querySelector('#gallery-btn2');
 let galleryBtn3 = document.querySelector('#gallery-btn3');
 
+//получаем картинки
 let galleryImg1 = document.querySelector('#gallery-img1');
 let galleryImg2 = document.querySelector('#gallery-img2');
 let galleryImg3 = document.querySelector('#gallery-img3');
 
+//обработка первой кнопки
 galleryBtn1.addEventListener('click', function(e){
 	galleryBtn1.classList.add("active__gallery-btn")								
 	galleryBtn2.classList.remove("active__gallery-btn")								
@@ -285,6 +288,7 @@ galleryBtn1.addEventListener('click', function(e){
 	galleryImg3.classList.add("close")								
 })
 
+//обработка второй кнопки
 galleryBtn2.addEventListener('click', function(e){
 	galleryBtn2.classList.add("active__gallery-btn")								
 	galleryBtn1.classList.remove("active__gallery-btn")								
@@ -295,6 +299,7 @@ galleryBtn2.addEventListener('click', function(e){
 	galleryImg3.classList.add("close")								
 })
 
+//обработка третьей кнопки
 galleryBtn3.addEventListener('click', function(e){
 	galleryBtn3.classList.add("active__gallery-btn")								
 	galleryBtn2.classList.remove("active__gallery-btn")								
