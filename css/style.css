@@ -13,6 +13,7 @@ ul{
 }
 html{
 	font-size: 16px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
 	font-family: 'Inter', sans-serif;
