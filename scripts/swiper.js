@@ -37,12 +37,18 @@ const swiperNews = new Swiper('.news-swiper', {
 		320:{
 			slidesPerView: 1,
 		},
-		480:{
+		490:{
 			slidesPerView: 2,
 		},
-		992:{
+		600:{
+			slidePerView: 2.5,
+		},
+		800:{
 			slidesPerView: 3,
 		},
+		900:{
+			slidesPerView: 3.5,
+		}
 	}
  });
 

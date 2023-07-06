@@ -153,6 +153,7 @@ catalogItem4.addEventListener('click', function(e){
 let appFormWrap = document.getElementById('appFormWrap');
 let menu__btn = document.querySelector('.menu__btn');
 let appForm = document.querySelector('.appForm');
+let appformClose = document.querySelector('.appForm__close')
 
 
 menu__btn.addEventListener('click', function(e){
@@ -169,6 +170,11 @@ appForm.addEventListener('click', function(e){
    e.stopPropagation()		
 })
 
+
+appformClose.addEventListener('click', ()=>{
+	appFormWrap.classList.remove('appFormWrap');
+	appFormWrap.classList.add('close');
+})
 
 
 
@@ -309,3 +315,7 @@ galleryBtn3.addEventListener('click', function(e){
 	galleryImg2.classList.add("close")								
 	galleryImg1.classList.add("close")								
 })
+
+
+
+
