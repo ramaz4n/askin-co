@@ -999,6 +999,7 @@ ul.breadcrumb {
 		display: flex;
 	}
 	.catalog__list {
+		justify-content:inherit;	
 		justify-content: center;
 		column-gap: 45px;
 		row-gap: 40px;
