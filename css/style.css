@@ -136,8 +136,10 @@ body {
 }
 .mobile__menu-close{
 	position: fixed;
-	right: 7px;
-	top: 7px;
+	right: 20px;
+	top: 15px;
+	width: 15px;
+	height: 15px;
 }
 
 .mobile__menu-list {
