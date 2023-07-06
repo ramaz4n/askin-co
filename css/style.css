@@ -677,8 +677,8 @@ ul.breadcrumb {
 	display: inline-block;
 	position: relative;
 	content: "";
-	top: 2.3px;
-	left: 5px;
+	top: 0;
+	left: 4.9px;
 	width: 12px;
 	height: 12px;
 	background-color: #aca192;
@@ -725,7 +725,7 @@ ul.breadcrumb {
 		height: 15px;
 	}
 	.appForm__agree input:checked + .fake-app-btn::before{
-		top: -5.7px;
+		top: -5px;
 		left: 3px;
 		width: 8px;
 		height: 8px;
